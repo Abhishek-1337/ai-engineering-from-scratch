@@ -449,6 +449,20 @@ LoRA mérite une mention spéciale. Il affinera les grands modèles linguistique
 5. Créer une matrice 3x3 avec rang 2. Vérifiez en utilisant le `rank()`Expliquez ensuite quel objet géométrique les colonnes couvrent.
 6. Le vecteur [1, 2, 3] est projeté sur [1, 1, 1].
 
+### Des indices
+
+**Exercise 1.**Commencez par `cosine_similarity`, garder la valeur entre -1 et 1, puis prendre le cosine d'arc et convertir les radians en degrés.`Vector([1, 0])`et `Vector([0, 1])`donner 90 et que le vecteur lui-même donne 0.
+
+**Exercise 2.**Mettez les deux facteurs d'échelle sur la diagonale d'une matrice 2x2 et mettez 0 dans les deux autres cellules. Le résultat pour [1, 1] doit être [2, 3].
+
+**Exercise 3.**Compute la similitude cosine pour chaque paire de 5 vecteurs (10 paires) et conserve la valeur la plus importante.
+
+**Exercise 4.**Utilisation `gram_schmidt`sur trois vecteurs indépendants, puis calculer `dot`pour chaque paire et `magnitude`Comparer avec une tolérance telle que `1e-9`, parce que le point flottant ne donne pas de zéros exacts.
+
+**Exercise 5.**Faites de la troisième rangée ou de la colonne la somme des deux premières, de sorte qu'une direction se répète. `rank()`doit retourner 2, et les colonnes ensuite couvrir un plan à travers l'origine.
+
+**Exercise 6.**Calculez l' échelle $\frac{a \cdot b}{b \cdot b}$et multiplier $b$par elle, ou appeler `project_onto`Vérifiez le reste .$a$moins la projection a un produit de point de 0 avec [1, 1, 1].
+
 ## Les termes clés
 
 | Term | What people say | What it actually means |
