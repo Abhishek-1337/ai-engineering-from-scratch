@@ -449,6 +449,20 @@ A LoRA merece uma menção especial. Ele sintoniza os modelos de linguagem grand
 5. Crie uma matriz 3x3 com o rango 2. Verifique usando o `rank()`Então, explique que objeto geométrico as colunas abrangem.
 6. Projete o vetor [1, 2, 3] para [1, 1, 1].
 
+### Indicios
+
+**Exercise 1.**Começa com `cosine_similarity`, manter o valor entre -1 e 1, então tomar o cosino de arco e converter radianos em graus.`Vector([1, 0])`E ...`Vector([0, 1])`dar 90 e que um vetor em si mesmo dá 0.
+
+**Exercise 2.**Coloque os dois fatores de escala na diagonal de uma matriz 2x2 e coloque 0 nas outras duas células. O resultado para [1, 1] deve ser [2, 3].
+
+**Exercise 3.**Calcule a semelhança cosínica para cada par dos 5 vetores (10 pares) e mantenha o maior valor. Verifique primeiro o seu ciclo com um vetor contra si mesmo, que deve dar 1.
+
+**Exercise 4.**Utilização`gram_schmidt`Em três vetores independentes, então computa`dot`para cada par e `magnitude`Comparar com uma tolerância como `1e-9`, porque o ponto flutuante não dá zeros exatos.
+
+**Exercise 5.**Faça a terceira linha ou coluna a soma das duas primeiras, para que uma direção se repita. `rank()`Deve retornar 2, e as colunas então atravessar um plano através da origem.
+
+**Exercise 6.**Calcule a escala $\frac{a \cdot b}{b \cdot b}$e multiplicam .$b$ou chamem.`project_onto`Verifique o resto .$a$menos a projeção tem um produto de ponto de 0 com [1, 1, 1].
+
 ## Termos-chave
 
 | Term | What people say | What it actually means |
