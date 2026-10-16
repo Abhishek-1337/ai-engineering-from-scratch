@@ -449,6 +449,20 @@ LoRA özel bir değinime layık. Ağır dil modellerini düşük sıralama matri
 5. 2 sıralı 3x3 bir matris oluşturun. `rank()`Sonra sütunların hangi geometrik nesneyi kapsadığını açıklayın.
 6. [1, 2, 3] vektörünü [1, 1, 1] üzerine projekt edin.
 
+### İpuçlar
+
+**Exercise 1.**Başlayın .`cosine_similarity`, değerini -1 ile 1 arasında tut, sonra ark cosinus al ve radyanları dereceye çevir.`Vector([1, 0])`ve `Vector([0, 1])`90 ver ve kendi başına bir vektör 0 verir.
+
+**Exercise 2.**İki ölçek faktörünü 2x2 matrisinin diyagonalına koy ve diğer iki hücreye 0 koy. [1, 1] için sonuç [2, 3] olmalıdır.
+
+**Exercise 3.**5 vektörden her çift için (iki çift) kozin benzerliğini hesaplayın ve en büyük değerini tutun.
+
+**Exercise 4.**Kullanım`gram_schmidt`Üç bağımsız vektör üzerinde hesaplayın.`dot`her çift için ve `magnitude`Her vektör için.`1e-9`, çünkü yüzen nokta tam sıfır vermez.
+
+**Exercise 5.**Üçüncü satır veya sütun ilk iki sayının toplamını yapın, böylece bir yön tekrarlanır. `rank()`2'yi geri göndermeli ve sütunlar bir düzlemden bir uçuruma geçmelidir.
+
+**Exercise 6.**Ölçüyü hesapla $\frac{a \cdot b}{b \cdot b}$ve kat kat .$b$Ya da çağırabilirsin.`project_onto`Geri kalanı kontrol et .$a$- proje, [1, 1, 1] ile 0'lu bir nokta ürünü vardır.
+
 ## Anahtar Terimler
 
 | Term | What people say | What it actually means |
